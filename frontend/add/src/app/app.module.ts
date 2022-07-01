@@ -8,6 +8,8 @@ import { AboutComponent } from './about/about.component';
 import { HomeComponent } from './home/home.component';
 import { BlogComponent } from './blog/blog.component';
 import { AddBlogComponent } from './add-blog/add-blog.component';
+import { EditBlogComponent } from './edit-blog/edit-blog.component';
+import { UpdateBlogComponent } from './update-blog/update-blog.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { AddBlogComponent } from './add-blog/add-blog.component';
     AboutComponent,
     HomeComponent,
     BlogComponent,
-    AddBlogComponent
+    AddBlogComponent,
+    EditBlogComponent,
+    UpdateBlogComponent
   ],
   imports: [
     FormsModule,
