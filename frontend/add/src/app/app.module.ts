@@ -10,7 +10,7 @@ import { BlogComponent } from './blog/blog.component';
 import { AddBlogComponent } from './add-blog/add-blog.component';
 import { EditBlogComponent } from './edit-blog/edit-blog.component';
 import { UpdateBlogComponent } from './update-blog/update-blog.component';
-
+import { LocationStrategy , HashLocationStrategy } from '@angular/common'; 
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,7 +26,12 @@ import { UpdateBlogComponent } from './update-blog/update-blog.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    {
+      provide: LocationStrategy,
+      useClass: HashLocationStrategy
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
