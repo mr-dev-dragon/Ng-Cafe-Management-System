@@ -10,7 +10,7 @@ import { BlogComponent } from './blog/blog.component';
 import { AddBlogComponent } from './add-blog/add-blog.component';
 import { EditBlogComponent } from './edit-blog/edit-blog.component';
 import { UpdateBlogComponent } from './update-blog/update-blog.component';
-import { LocationStrategy , HashLocationStrategy } from '@angular/common'; 
+import { LocationStrategy , PathLocationStrategy } from '@angular/common'; 
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,7 +29,7 @@ import { LocationStrategy , HashLocationStrategy } from '@angular/common';
   providers: [
     {
       provide: LocationStrategy,
-      useClass: HashLocationStrategy
+      useClass: PathLocationStrategy
     }
   ],
   bootstrap: [AppComponent]
