@@ -12,7 +12,9 @@ import { EditBlogComponent } from './edit-blog/edit-blog.component';
 import { UpdateBlogComponent } from './update-blog/update-blog.component';
 import { LocationStrategy , PathLocationStrategy } from '@angular/common';
 import { AppRutiongModule } from './app-rutiong.module';
-import { P1Component } from './p1/p1.component'; 
+import { P1Component } from './p1/p1.component';
+import { PComponent } from './p/p.component';
+import { P4Component } from './p4/p4.component'; 
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,6 +25,8 @@ import { P1Component } from './p1/p1.component';
     EditBlogComponent,
     UpdateBlogComponent,
     P1Component,
+    PComponent,
+    P4Component,
     
   ],
   imports: [

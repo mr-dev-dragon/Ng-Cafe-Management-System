@@ -4,15 +4,9 @@ import { RouterModule, Routes } from '@angular/router';
 import { AddBlogComponent } from './add-blog/add-blog.component';
 import { P1Component } from './p1/p1.component';
 const routes: Routes = [
-  {
-    path: 'add-blog',
-    component: AddBlogComponent,
-    redirectTo: '/',
-  },
-  {
-    path: 'products/p1',
-    component: P1Component
-  },
+  { path: 'product/1', component:  },
+  { path: 'product/2', component:  },
+  { path:'product/3', component:  }
 ];
 
 @NgModule({
