@@ -11,13 +11,15 @@ import { AppRutiongModule } from './app-rutiong.module';
 
 import { ProductComponent } from './product/product.component';
 import { ClientsComponent } from './clients/clients.component';
-import { SearchComponent } from './search/search.component'; 
+import { SearchComponent } from './search/search.component';
+import { NotfoundComponent } from './notfound/notfound.component'; 
 @NgModule({
   declarations: [
     AppComponent,
     ProductComponent,
     ClientsComponent,
     SearchComponent,
+    NotfoundComponent,
     
   ],
   imports: [

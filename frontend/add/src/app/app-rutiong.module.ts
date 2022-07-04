@@ -4,6 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { ProductComponent } from './product/product.component';
 import { ClientsComponent } from './clients/clients.component';
 import { SearchComponent } from './search/search.component';
+import { NotfoundComponent } from './notfound/notfound.component';
 const routes: Routes = [
   {
     path: 'product/:id',
@@ -16,7 +17,11 @@ const routes: Routes = [
   {
     path: 'search',
     component: SearchComponent,
-  }
+  },
+  {
+    path: '**',
+    component: NotfoundComponent,
+  },
 ];
 
 @NgModule({
