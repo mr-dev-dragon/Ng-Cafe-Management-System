@@ -1,19 +1,13 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "cli": {
-    "analytics": "c705e37b-4534-45fd-9a5f-1792433317bd"
-  },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ng-13-project": {
+    "ng-v14-project": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
           "style": "scss"
-        },
-        "@schematics/angular:application": {
-          "strict": true
         }
       },
       "root": "",
@@ -23,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/ng-13-project",
+            "outputPath": "dist/ng-v14-project",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -75,10 +69,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "ng-13-project:build:production"
+              "browserTarget": "ng-v14-project:build:production"
             },
             "development": {
-              "browserTarget": "ng-13-project:build:development"
+              "browserTarget": "ng-v14-project:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -86,7 +80,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "ng-13-project:build"
+            "browserTarget": "ng-v14-project:build"
           }
         },
         "test": {
@@ -110,5 +104,7 @@
       }
     }
   },
-  "defaultProject": "ng-13-project"
+  "cli": {
+    "analytics": "e3aaf9f8-2e35-4a8d-b86e-fdceda21ce4a"
+  }
 }
