@@ -1,12 +1,17 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
-import { AddBlogComponent } from './add-blog/add-blog.component';
-import { P1Component } from './p1/p1.component';
+import { ProductComponent } from './product/product.component';
+
 const routes: Routes = [
-  { path: 'product/1', component:  },
-  { path: 'product/2', component:  },
-  { path:'product/3', component:  }
+  {
+    path: 'product/:id',
+    component: ProductComponent,
+  },
+  {
+    path: 'product/:productId/:photoId/:photoName',
+    component: ProductComponent,
+  },
 ];
 
 @NgModule({
