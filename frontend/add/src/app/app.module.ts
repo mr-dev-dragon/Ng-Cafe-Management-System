@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
@@ -13,6 +12,8 @@ import { ProductComponent } from './product/product.component';
 import { ClientsComponent } from './clients/clients.component';
 import { SearchComponent } from './search/search.component';
 import { NotfoundComponent } from './notfound/notfound.component'; 
+import { Routes, RouterModule } from '@angular/router';
+import { AppRoutingModule } from './app-routing.module';
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,7 +27,8 @@ import { NotfoundComponent } from './notfound/notfound.component';
     FormsModule,
     BrowserModule,
     AppRutiongModule,
-    RouterModule
+    RouterModule,
+    AppRoutingModule
 
   ],
   providers: [
