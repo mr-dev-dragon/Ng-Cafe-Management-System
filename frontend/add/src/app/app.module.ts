@@ -13,11 +13,13 @@ import { EditBlogComponent } from './edit-blog/edit-blog.component';
 import { LocationStrategy , PathLocationStrategy } from '@angular/common';
 import { AppRutiongModule } from './app-rutiong.module';
 
-import { ProductComponent } from './product/product.component'; 
+import { ProductComponent } from './product/product.component';
+import { ClientsComponent } from './clients/clients.component'; 
 @NgModule({
   declarations: [
     AppComponent,
     ProductComponent,
+    ClientsComponent,
     
   ],
   imports: [

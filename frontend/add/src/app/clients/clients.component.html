@@ -1,0 +1,63 @@
+<p>clients works!</p>
+
+<table>
+ <tr>
+    <th>
+      clientId
+    </th>
+    <th>
+      clientName
+    </th>
+    <th>
+      clientAddress
+    </th>
+    <th>
+      clientPhone
+    </th>
+    <th>
+      clientEmail
+    </th>
+    <th>
+      clientZip
+
+    </th>
+    <th>
+      clientCity
+    </th>
+    <th>
+      clientState
+    </th>
+</tr>
+  <tr *ngFor="let client of clientslist ">
+    <td>
+      {{client.clientId}}
+    </td>
+    <td>
+      {{client.clientName}}
+    </td>
+    <td>
+      {{client.clientAddress}}
+    </td>
+    <td>
+      {{client.clientPhone}}
+    </td>
+    <td>
+      {{client.clientEmail}}
+    </td>
+    <td>
+      {{client.clientZip}}
+    </td>
+    <td>
+      {{client.clientCity}}
+    </td>
+    <td>
+      {{client.clientState}}
+    </td>
+     <td>
+      <a [routerLink]="['/user' , client.clientId, 'edit']">Edit </a>
+     </td>
+      <td>
+      <a [routerLink]="['/delete' , 'client.clientId']"> || delete</a>
+     </td>
+  </tr>  
+</table>

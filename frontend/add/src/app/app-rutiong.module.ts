@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 import { ProductComponent } from './product/product.component';
+import { ClientsComponent } from './clients/clients.component';
 
 const routes: Routes = [
   {
@@ -12,6 +13,10 @@ const routes: Routes = [
     path: 'product/:productId/:photoId/:photoName',
     component: ProductComponent,
   },
+  {
+    path: 'cle',
+    component: ClientsComponent
+  }
 ];
 
 @NgModule({

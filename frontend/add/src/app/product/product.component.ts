@@ -7,10 +7,17 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class ProductComponent implements OnInit {
 
+
+
+
   constructor(private activatedRoute: ActivatedRoute) { 
-    
-    this.activatedRoute.params.subscribe(params => {
-      
+ 
+    this.activatedRoute.params.subscribe((params) => {   
+
+      console.log(params); 
+      const interval = params;
+
+      this
     }); 
   }
 
