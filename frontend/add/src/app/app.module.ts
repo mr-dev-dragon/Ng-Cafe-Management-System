@@ -14,6 +14,7 @@ import { SearchComponent } from './search/search.component';
 import { NotfoundComponent } from './notfound/notfound.component'; 
 import { Routes, RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
+import { CustomersModule } from './customers/customers.module';
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +29,8 @@ import { AppRoutingModule } from './app-routing.module';
     BrowserModule,
     AppRutiongModule,
     RouterModule,
-    AppRoutingModule
+    AppRoutingModule,
+    CustomersModule
 
   ],
   providers: [
