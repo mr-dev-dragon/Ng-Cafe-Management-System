@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 import { ProductComponent } from './product/product.component';
 import { ClientsComponent } from './clients/clients.component';
-
+import { SearchComponent } from './search/search.component';
 const routes: Routes = [
   {
     path: 'product/:id',
@@ -14,8 +14,8 @@ const routes: Routes = [
     component: ProductComponent,
   },
   {
-    path: 'cle',
-    component: ClientsComponent
+    path: 'search',
+    component: SearchComponent,
   }
 ];
 
