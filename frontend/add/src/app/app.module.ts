@@ -11,7 +11,8 @@ import { AddBlogComponent } from './add-blog/add-blog.component';
 import { EditBlogComponent } from './edit-blog/edit-blog.component';
 import { UpdateBlogComponent } from './update-blog/update-blog.component';
 import { LocationStrategy , PathLocationStrategy } from '@angular/common';
-import { AppRutiongModule } from './app-rutiong.module'; 
+import { AppRutiongModule } from './app-rutiong.module';
+import { P1Component } from './p1/p1.component'; 
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,6 +22,7 @@ import { AppRutiongModule } from './app-rutiong.module';
     AddBlogComponent,
     EditBlogComponent,
     UpdateBlogComponent,
+    P1Component,
     
   ],
   imports: [
