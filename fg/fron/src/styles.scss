@@ -28,6 +28,14 @@ $fron-theme: mat.define-light-theme((
   )
 ));
 
+
+.dark-mode{
+  background-color: red
+}
+
+.light-mode{
+  background-color: aqua
+}
 // Include theme styles for core and each component used in your app.
 // Alternatively, you can import and @include the theme mixins for each component
 // that you are using.
@@ -37,3 +45,4 @@ $fron-theme: mat.define-light-theme((
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
